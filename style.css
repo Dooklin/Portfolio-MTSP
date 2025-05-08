@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    font-family: "Sacramento", cursive;
+    font-family: "panoptica-doesburg", sans-serif;
     font-weight: 400;
     font-style: normal;
     
@@ -17,21 +17,51 @@ body {
 /* HEADER */
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
 
-    background-color: #d3a652;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-#logo-section {
+#floating-island {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 7.5vh;
+
+    border: 2px dashed white; /* maybe dotted or striped? */
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sections {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 15vw;
-    height: 30vh;
+    width: 12vw;
+    height: 7.5vh;
+}
+
+.sections a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+
+    transition: all ease 0.2s;
+}
+.sections a:hover {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+#home-section {
+    
 }
 
 #logo {
@@ -40,27 +70,19 @@ header {
 }
 
 #heading-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 70vw;
-    height: 30vh;
+    
 }
 
 #heading {
-    font-size: 3.5rem;
+    font-size: 2rem;
+}
+
+#about-section {
+    
 }
 
 #logout-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 15vw;
-    height: 30vh;
+    
 }
 
 /* LOGIN */
@@ -183,19 +205,21 @@ header {
 }
 
 /* MAIN */
-#body-background {
+#content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95vw;
-    height: 70vh;
+    width: 100vw;
+    height: 80vh;
 
-    background-color: #f58549;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-#other-background {
-    width: 80vw;
-    height: 70vw;
+#content-wrapper {
+    width: 50vw;
+    height: auto;
 
-    background-color: #eec170;
+    border-radius: 25px;
+
+    background-color: white;
 }

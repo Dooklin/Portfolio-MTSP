@@ -1,11 +1,19 @@
 <header>
-    <div id="logo-section">
-        <div id="logo">LOGO</div>
-    </div>
-    <div id="heading-section">
-        <h1 id="heading">Welcome to THE Portfolio Site</h1>
-    </div>
-    <div id="logout-section">
-        <a href="logout.php">Abmelden</a>
+    <div id="floating-island">
+        <div id="home-section" class="sections">
+            <a href="index.php">Home 🏠</a>
+        </div>
+        <div id="blogs-section" class="sections">
+            <a href="blogs.php">Blogs 📜</a>
+        </div>
+        <div id="projects-section" class="sections">
+            <a href="projects.php">Projects 🎥</a>
+        </div>
+        <div id="about-section" class="sections">
+            <a href="about.php">About 😎</a>
+        </div>
+        <div id="logout-section" class="sections">
+            <a href="logout.php">Abmelden 🤨</a>
+        </div>
     </div>
 </header>
