@@ -17,16 +17,116 @@ header {
 }
 
 /* LOGIN */
+#tst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #background {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 95vw;
-    height: 95vh;
+    width: 90vw;
+    height: 90vh;
 
     border-radius: 50px;
 
-    background-color: #585123;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 35vw;
+    height: 50vh;
+
+    border-radius: 35px;
+
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #f58549;
+}
+
+#login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 30vw;
+    height: 45vh;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #eec170;
+    transition: all ease 0.1s;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-input {
+    width: 20vw;
+    height: 25px;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#password-input {
+    width: 20vw;
+    height: 25px;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#submit-login {
+    width: 12vw;
+    height: 35px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+
+    background-color: #cd9a3c;
+    transition: all ease 0.1s;
+}
+
+#submit-login:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    background-color: #b48631;
 }
