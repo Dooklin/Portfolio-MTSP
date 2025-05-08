@@ -1,6 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
     
     background-color: #772f1a;
 
@@ -8,12 +16,51 @@ body {
 
 /* HEADER */
 header {
+    display: flex;
+    flex-direction: row;
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
 
-    
+    background-color: #d3a652;
+}
 
-    background-color: #f58549;
+#logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 15vw;
+    height: 30vh;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+#heading-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 70vw;
+    height: 30vh;
+}
+
+#heading {
+    font-size: 3.5rem;
+}
+
+#logout-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 15vw;
+    height: 30vh;
 }
 
 /* LOGIN */
@@ -86,6 +133,8 @@ header {
     width: 20vw;
     height: 25px;
 
+    margin-bottom: 10px;
+
     text-decoration: none;
     font-size: 1.2rem;
     outline: none;
@@ -100,6 +149,8 @@ header {
 #password-input {
     width: 20vw;
     height: 25px;
+
+    margin-bottom: 10px;
 
     text-decoration: none;
     font-size: 1.2rem;
@@ -129,4 +180,22 @@ header {
 #submit-login:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
     background-color: #b48631;
+}
+
+/* MAIN */
+#body-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    height: 70vh;
+
+    background-color: #f58549;
+}
+
+#other-background {
+    width: 80vw;
+    height: 70vw;
+
+    background-color: #eec170;
 }
