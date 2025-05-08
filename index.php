@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['name'])) {
+    header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +17,7 @@
 </head>
 <body>
     <?php include "header.php" ?>
+
+    
 </body>
 </html>
