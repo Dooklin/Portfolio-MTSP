@@ -1,9 +1,5 @@
 <?php
 session_start();
-
-if(!isset($_SESSION['name'])) {
-    header("Location: login.php");
-}
 ?>
 
 <!DOCTYPE html>
@@ -14,30 +10,30 @@ if(!isset($_SESSION['name'])) {
     <meta name="author" content="Elias Schinkinger">
     <link rel="stylesheet" href="https://use.typekit.net/dfj2dpe.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Blogs</title>
 </head>
 <body>
     <?php include "header.php" ?>
-    <div id="content-container">
-        <div id="content-wrapper">
-            <!-- php like here 5 blogs -->
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
+    <div id="blog-container">
+        <div id="blog-wrapper">
+            <!-- php like here (all projects with desc n stuff...) -->
+            <div class="blog-container">
+                <h2 class="blog-heading">Why I Adore Ants</h2>
+                <div class="blog-content">
                     They kinda Cool...
                 </div>
                 <hr>
             </div>
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
+            <div class="blog-container">
+                <h2 class="blog-heading">Why I Adore Ants</h2>
+                <div class="blog-content">
                     They kinda Cool...
                 </div>
                 <hr>
             </div>
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
+            <div class="blog-container">
+                <h2 class="blog-heading">Why I Adore Ants</h2>
+                <div class="blog-content">
                     They kinda Cool...
                 </div>
                 <hr>
