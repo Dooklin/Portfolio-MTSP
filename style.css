@@ -10,9 +10,21 @@ body {
     font-weight: 400;
     font-style: normal;
     
-    background-color: #772f1a;
+    background-color: black;
 
 }
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid gray;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  
 
 /* HEADER */
 header {
@@ -60,71 +72,26 @@ header {
     text-decoration: underline;
 }
 
-#home-section {
-    
-}
-
 #logo {
     width: 50px;
     height: 50px;
-}
-
-#heading-section {
-    
 }
 
 #heading {
     font-size: 2rem;
 }
 
-#about-section {
-    
-}
-
-#logout-section {
-    
-}
-
 /* LOGIN */
-#tst {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 100vw;
-    height: 100vh;
-
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#background {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 90vw;
-    height: 90vh;
-
-    border-radius: 50px;
-
-    background-color: rgba(0, 0, 0, 0);
-}
-
 #login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 35vw;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
 
     border-radius: 35px;
-
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: #f58549;
 }
 
 #login-wrapper {
@@ -140,7 +107,7 @@ header {
     border-radius: 25px;
 
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: #eec170;
+    background-color: white;
     transition: all ease 0.1s;
 }
 
@@ -185,6 +152,12 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.login-input {
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #submit-login {
     width: 12vw;
     height: 35px;
@@ -195,13 +168,15 @@ header {
 
     font-size: 1.2rem;
 
-    background-color: #cd9a3c;
-    transition: all ease 0.1s;
+    color: white;
+
+    background-color: black;
+    transition: all ease 0.2s;
 }
 
 #submit-login:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
-    background-color: #b48631;
+    background-color: rgb(45, 45, 45);
 }
 
 /* MAIN */
@@ -219,7 +194,39 @@ header {
     width: 50vw;
     height: auto;
 
+    padding: 25px;
+
     border-radius: 25px;
 
     background-color: white;
+}
+
+/* BLOG */
+#blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#blog-wrapper {
+    width: 70vw;
+    height: auto;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+.blog-heading {
+    font-size: 2rem;
+}
+
+.blog-content {
+    font-size: 1.3rem;
 }
