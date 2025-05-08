@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #772f1a;
+
+}
+
+/* HEADER */
+header {
+    width: 100vw;
+    height: 20vh;
+
+    
+
+    background-color: #f58549;
+}
