@@ -28,6 +28,12 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
         <div id="content-wrapper">
             <h1>BLOGS</h1>
             <?php
+            if(isset($_SESSION['name'])) {
+                echo '<a href="addblog.php" class="add">ADD A BLOG</a>';
+            }
+            ?>
+            
+            <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM blogs ORDER BY blogid DESC LIMIT 3;";
             $result = mysqli_query($db, $sql);
@@ -61,6 +67,12 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
      <div id="project-container">
         <div id="project-wrapper">
             <h1>PROJECTS</h1>
+            <?php
+            if(isset($_SESSION['name'])) {
+                echo '<a href="addproject.php" class="add">ADD A PROJECT</a>';
+            }
+            ?>
+            
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM projects ORDER BY projectid DESC LIMIT 3;";
