@@ -72,7 +72,7 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
                 echo '<a href="addproject.php" class="add">ADD A PROJECT</a>';
             }
             ?>
-            
+
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM projects ORDER BY projectid DESC LIMIT 3;";
