@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['name'])) {
+    header("Location: login.php");
+}
+
 if(isset($_POST['submit-edit-blog'], $_POST['title'], $_POST['content'])) {
     $blogid = $_POST['blogid'];
     $title = $_POST['title'];

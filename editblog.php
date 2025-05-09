@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['name'])) {
+    header("Location: login.php");
+}
+
 $blogid = $_GET['blogid'];
 
 $db = mysqli_connect("localhost", "root", "", "portfolio");
@@ -11,14 +17,6 @@ $date = $_GET['date'];
 
 
 mysqli_close($db);
-?>
-
-<?php
-session_start();
-
-if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
-    header("Location: login.php");
-}
 ?>
 
 <!DOCTYPE html>

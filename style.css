@@ -231,6 +231,11 @@ header {
     background-color: white;
 }
 
+#all-blogs {
+    font-size: 2rem;
+    color: black;
+}
+
 /* BLOG */
 #blog-container {
     display: flex;
@@ -259,6 +264,12 @@ header {
 
 .blog-content {
     font-size: 1.3rem;
+}
+
+.blog-edit {
+    color: purple;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 /* EDIT BLOG */
