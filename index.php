@@ -79,7 +79,6 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
                 if (isset($_SESSION['name'])) {
                     echo "<a href='editproject.php?projectid=$projectid&title=$title&content=$content&imagepath=$imagepath' class='blog-edit'>Edit</a>";
                 }
-                echo     "<p>Created On: $date</p>";
                 echo     "<hr>";
                 echo "</div>";
             }

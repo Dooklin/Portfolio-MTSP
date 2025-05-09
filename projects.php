@@ -14,30 +14,38 @@ session_start();
 </head>
 <body>
     <?php include "header.php" ?>
+    <div id="intro-container">
+        <div id="intro-wrapper">
+            <h1 id="intro-heading">Here are ALL my Projects!</h1>
+        </div>
+    </div>
     <div id="blog-container">
         <div id="blog-wrapper">
-            <!-- php like here (all projects with desc n stuff...) -->
-            <div class="blog-container">
-                <h2 class="blog-heading">Why I Adore Ants</h2>
-                <div class="blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
-            <div class="blog-container">
-                <h2 class="blog-heading">Why I Adore Ants</h2>
-                <div class="blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
-            <div class="blog-container">
-                <h2 class="blog-heading">Why I Adore Ants</h2>
-                <div class="blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
+            <!-- php like here 5 blogs -->
+            <?php
+            $db = mysqli_connect("localhost", "root", "", "portfolio");
+            $sql = "SELECT * FROM projects ORDER BY projectid DESC;";
+            $result = mysqli_query($db, $sql);
+            while($row = mysqli_fetch_array($result)) {
+                $projectid = $row['projectid'];
+                $title = $row['title'];
+                $content = $row['content'];
+                $imagepath = $row['imagepath'];
+
+                echo '<div class="start-blog-container">';
+                echo     "<h2>$title</h2>";
+                echo     '<div class="start-blog-content">';
+                echo         $content;
+                echo     "<span><img src='$imagepath' alt='$title' id='projectIMG' width='500' height='500'></span>";
+                echo     "</div>";
+                if (isset($_SESSION['name'])) {
+                    echo "<a href='editproject.php?projectid=$projectid&title=$title&content=$content&imagepath=$imagepath' class='blog-edit'>Edit</a>";
+                }
+                echo     "<hr>";
+                echo "</div>";
+            }
+            mysqli_close($db);
+            ?>
         </div>
     </div>
     
