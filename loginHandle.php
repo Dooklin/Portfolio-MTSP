@@ -17,4 +17,10 @@ if(isset($_POST['submit'], $_POST['submit'], $_POST['submit'])) {
     }
 }
 
+if(isset($_POST['guestsubmit'])) {
+    session_start();
+    $_SESSION['guest'] = 'guest';
+    header("Location: index.php");
+}
+
 ?>

@@ -18,6 +18,9 @@
                     
                     <input type="submit" value="Anmelden" name="submit" id="submit-login" class="login-input">
                 </form>
+                <form action="loginHandle.php" method="post" id="login-guest-form">
+                    <input type="submit" value="Login As Guest" name="guestsubmit" id="login-guest-submit">
+                </form>
             </div>
         </div>
     </div>
