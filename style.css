@@ -201,6 +201,7 @@ header {
 
     padding: 10px;
 
+    border: 2px dashed black;
     border-radius: 5px;
 
     background-color: rgb(20, 75, 77);
@@ -232,6 +233,37 @@ header {
 }
 
 #all-blogs {
+    font-size: 2rem;
+    color: black;
+}
+
+#spacer {
+    width: 100vw;
+    height: 200px;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#project-wrapper {
+    width: 50vw;
+    height: auto;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#all-projects {
     font-size: 2rem;
     color: black;
 }
@@ -336,4 +368,40 @@ header {
 #submit-edit-blog:hover {
     background-color: rgb(55, 147, 49);
     
+}
+
+/* PROJECTS */
+#main-project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#main-project-wrapper {
+    width: 70vw;
+    height: auto;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#edit-imagepath {
+    width: 25vw;
+    height: 30px;
+
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1.2rem;
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

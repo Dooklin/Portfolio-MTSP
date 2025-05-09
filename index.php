@@ -23,9 +23,9 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
             <h1 id="intro-heading">Welcome to my very own Portfolio site!</h1>
         </div>
     </div>
+    <!-- BLOGS -->
     <div id="content-container">
         <div id="content-wrapper">
-            <!-- php like here 5 blogs -->
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM blogs ORDER BY blogid DESC LIMIT 3;";
@@ -52,10 +52,41 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
             ?>
             <a href="blogs.php" id="all-blogs">See All My Blogs!</a>
         </div>
-        
     </div>
 
-    <div>
+    <div id="spacer"></div>
+
+    <!-- PROJECTS -->
+     <div id="project-container">
+        <div id="project-wrapper">
+            <!-- php like here 5 blogs -->
+            <?php
+            $db = mysqli_connect("localhost", "root", "", "portfolio");
+            $sql = "SELECT * FROM projects ORDER BY projectid DESC LIMIT 3;";
+            $result = mysqli_query($db, $sql);
+            while($row = mysqli_fetch_array($result)) {
+                $projectid = $row['projectid'];
+                $title = $row['title'];
+                $content = $row['content'];
+                $imagepath = $row['imagepath'];
+
+                echo '<div class="start-project-container">';
+                echo     "<h2>$title</h2>";
+                echo     '<div class="start-project-content">';
+                echo         $content;
+                echo     "<span><img src='$imagepath' alt='$title' id='projectIMG' width='500' height='500'></span>";
+                echo     "</div>";
+                if (isset($_SESSION['name'])) {
+                    echo "<a href='editproject.php?projectid=$projectid&title=$title&content=$content&imagepath=$imagepath' class='blog-edit'>Edit</a>";
+                }
+                echo     "<p>Created On: $date</p>";
+                echo     "<hr>";
+                echo "</div>";
+            }
+            mysqli_close($db);
+            ?>
+            <a href="projects.php" id="all-projects">See All My Projects!</a>
+        </div>
         
     </div>
     
