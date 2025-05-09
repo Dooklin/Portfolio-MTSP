@@ -42,14 +42,21 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
                 echo         $content;
                 echo     "</div>";
                 if (isset($_SESSION['name'])) {
-                    echo "<a href='editblog.php?blogid=$blogid&title=$title&content=$content&date=$date'>Edit</a>";
+                    echo "<a href='editblog.php?blogid=$blogid&title=$title&content=$content&date=$date' class='blog-edit'>Edit</a>";
                 }
+                echo     "<p>Created On: $date</p>";
                 echo     "<hr>";
                 echo "</div>";
             }
             mysqli_close($db);
             ?>
+            <a href="blogs.php" id="all-blogs">See All My Blogs!</a>
         </div>
+        
+    </div>
+
+    <div>
+        
     </div>
     
     <svg id="triangle-bg" style="position: fixed; z-index: -1; width: 100%; height: 100%; top: 0; left: 0;"></svg>
