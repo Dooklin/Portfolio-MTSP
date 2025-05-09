@@ -21,7 +21,12 @@ session_start();
     </div>
     <div id="blog-container">
         <div id="blog-wrapper">
-            <!-- php like here 5 blogs -->
+            <?php
+            if(isset($_SESSION['name'])) {
+                echo '<a href="addproject.php" class="add">ADD A PROJECT</a>';
+            }
+            ?>
+            
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM projects ORDER BY projectid DESC;";
