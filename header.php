@@ -13,7 +13,7 @@
             <a href="about.php">About 😎</a>
         </div>
         <div id="logout-section" class="sections">
-            <a href="logout.php">Abmelden 🤨</a>
+            <a href="logout.php">Logout 🤨</a>
         </div>
     </div>
 </header>
