@@ -29,6 +29,19 @@ session_start();
                     My Names Elias and i am scared of minorities and women
                     <br>
                     (That one album cover grade pic that i sent eva)
+                    <br>
+                    LINKS: <br>
+                    Instagram: <a href="https://www.instagram.com/elebele_124/">EleBele_124</a><br>
+                    Youtube: <a href="https://www.youtube.com/@Dooklin">Dooklin</a><br>
+                    <br>
+                    FRIENDS:<br>
+                    <a href="https://www.youtube.com/@_honeyfox">Honeyfox</a> 🦊 <br>
+                    <a href="https://www.youtube.com/@masnlp">MasnLP</a> 🦡 <br>
+                    <a href="https://www.youtube.com/@greenysoka">Greeny</a> 🐈 <br>
+                    <br>
+                    test
+
+    
                 </div>
                 <hr>
             </div>

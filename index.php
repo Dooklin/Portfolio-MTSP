@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
+if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
     header("Location: login.php");
 }
 ?>
@@ -26,6 +26,7 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
     <!-- BLOGS -->
     <div id="content-container">
         <div id="content-wrapper">
+            <h1>BLOGS</h1>
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM blogs ORDER BY blogid DESC LIMIT 3;";
@@ -59,7 +60,7 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
     <!-- PROJECTS -->
      <div id="project-container">
         <div id="project-wrapper">
-            <!-- php like here 5 blogs -->
+            <h1>PROJECTS</h1>
             <?php
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM projects ORDER BY projectid DESC LIMIT 3;";
