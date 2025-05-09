@@ -73,8 +73,8 @@ if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
                 echo '<div class="start-project-container">';
                 echo     "<h2>$title</h2>";
                 echo     '<div class="start-project-content">';
-                echo         $content;
-                echo     "<span><img src='$imagepath' alt='$title' id='projectIMG' width='500' height='500'></span>";
+                echo         $content, "<br>";
+                echo     "<span><img src='$imagepath' alt='$title' id='projectIMG' width='200'></span>";
                 echo     "</div>";
                 if (isset($_SESSION['name'])) {
                     echo "<a href='editproject.php?projectid=$projectid&title=$title&content=$content&imagepath=$imagepath' class='blog-edit'>Edit</a>";
