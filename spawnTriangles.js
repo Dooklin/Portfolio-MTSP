@@ -27,7 +27,7 @@ for (let i = 0; i < numTriangles; i++) {
         tries++;
     } while (!isFarEnough(x, y) && tries < 100);
 
-    if (tries >= 100) continue; // skip if no space found
+    if (tries >= 100) continue;
 
     let size = rand(30, 100);
     let rotation = rand(0, 360);

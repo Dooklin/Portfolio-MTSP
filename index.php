@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['name'])) {
+if(!isset($_SESSION['name']) &&  !isset($_SESSION['guest'])) {
     header("Location: login.php");
 }
 ?>
@@ -18,30 +18,37 @@ if(!isset($_SESSION['name'])) {
 </head>
 <body>
     <?php include "header.php" ?>
+    <div id="intro-container">
+        <div id="intro-wrapper">
+            <h1 id="intro-heading">Welcome to my very own Portfolio site!</h1>
+        </div>
+    </div>
     <div id="content-container">
         <div id="content-wrapper">
             <!-- php like here 5 blogs -->
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
-            <div class="start-blog-container">
-                <h2>Why I Adore Ants</h2>
-                <div class="start-blog-content">
-                    They kinda Cool...
-                </div>
-                <hr>
-            </div>
+            <?php
+            $db = mysqli_connect("localhost", "root", "", "portfolio");
+            $sql = "SELECT * FROM blogs ORDER BY blogid DESC LIMIT 3;";
+            $result = mysqli_query($db, $sql);
+            while($row = mysqli_fetch_array($result)) {
+                $blogid = $row['blogid'];
+                $title = $row['title'];
+                $content = $row['content'];
+                $date = $row['created_at'];
+
+                echo '<div class="start-blog-container">';
+                echo     "<h2>$title</h2>";
+                echo     '<div class="start-blog-content">';
+                echo         $content;
+                echo     "</div>";
+                if (isset($_SESSION['name'])) {
+                    echo "<a href='editblog.php?blogid=$blogid&title=$title&content=$content&date=$date'>Edit</a>";
+                }
+                echo     "<hr>";
+                echo "</div>";
+            }
+            mysqli_close($db);
+            ?>
         </div>
     </div>
     

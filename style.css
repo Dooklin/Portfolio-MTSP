@@ -14,18 +14,6 @@ body {
 
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid gray;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-  }
-  
-
 /* HEADER */
 header {
     display: flex;
@@ -179,13 +167,55 @@ header {
     background-color: rgb(45, 45, 45);
 }
 
+#login-guest-form {
+    margin-top: 20px;
+}
+
+#login-guest-submit {
+    width: 10vw;
+    height: 5vh;
+
+    border: 2px dashed black;
+    border-radius: 5px;
+
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* MAIN */
+#intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#intro-wrapper {
+    text-align: center;
+    width: 50vw;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    background-color: rgb(20, 75, 77);
+}
+
+#intro-heading {
+    color:black;
+}
+
 #content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
 
     background-color: rgba(0, 0, 0, 0);
 }
@@ -207,7 +237,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
 
     background-color: rgba(0, 0, 0, 0);
 }
@@ -229,4 +259,70 @@ header {
 
 .blog-content {
     font-size: 1.3rem;
+}
+
+/* EDIT BLOG */
+#content-blog-wrapper {
+    width: 50vw;
+    height: auto;
+
+    padding: 25px;
+    padding-bottom: 0;
+
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#edit-title {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+
+    outline: none;
+    border: none;
+
+    font-size: 1.5rem;
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#edit-content {
+    margin-top: 20px;
+
+    width: 80%;
+    max-width: 100%;
+    min-width: 30%;
+    height: 20vh;
+
+    outline: none;
+    border: none;
+
+    font-size: 1rem;
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#submit-edit-blog {
+    width: 50vw;
+    height: 50px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 0 0;
+
+    font-size: 2.5rem;
+    font-family: "panoptica-doesburg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(78, 202, 69);
+    transition: all ease 0.2s;
+}
+
+#submit-edit-blog:hover {
+    background-color: rgb(55, 147, 49);
+    
 }
