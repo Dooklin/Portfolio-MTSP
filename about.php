@@ -14,6 +14,11 @@ session_start();
 </head>
 <body>
     <?php include "header.php" ?>
+    <div id="intro-container">
+        <div id="intro-wrapper">
+            <h1 id="intro-heading">A little about MYSELF😎</h1>
+        </div>
+    </div>
     <div id="blog-container">
         <div id="blog-wrapper">
             <!-- php like here (all projects with desc n stuff...) -->
@@ -22,6 +27,8 @@ session_start();
                 <h2 class="blog-heading">HELLO!</h2>
                 <div class="blog-content">
                     My Names Elias and i am scared of minorities and women
+                    <br>
+                    (That one album cover grade pic that i sent eva)
                 </div>
                 <hr>
             </div>
