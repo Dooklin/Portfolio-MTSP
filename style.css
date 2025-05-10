@@ -204,11 +204,12 @@ header {
     border: 2px dashed black;
     border-radius: 5px;
 
-    background-color: rgb(20, 75, 77);
+    background-color: rgb(56, 61, 150);
 }
 
 #intro-heading {
     color:black;
+    margin-top: 10px;
 }
 
 #content-container {

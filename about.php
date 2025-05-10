@@ -21,7 +21,6 @@ session_start();
     </div>
     <div id="blog-container">
         <div id="blog-wrapper">
-            <!-- php like here (all projects with desc n stuff...) -->
             <div class="blog-container">
                 <hr>
                 <h2 class="blog-heading">HELLO!</h2>

@@ -8,9 +8,10 @@ if(!isset($_SESSION['name'])) {
 if(isset($_POST['submit-edit-blog'], $_POST['title'], $_POST['content'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];
+    $date = date("Y-m-d");
 
     $db = mysqli_connect("localhost", "root", "", "portfolio");
-    $sql = "INSERT INTO blogs (title, content) VALUES ('$title', '$content')";
+    $sql = "INSERT INTO blogs (title, content, created_at) VALUES ('$title', '$content', '$date')";
     if(mysqli_query($db, $sql)) {
         header("Location: index.php");
         mysqli_close($db);
