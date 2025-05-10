@@ -32,6 +32,7 @@ session_start();
                     LINKS: <br>
                     Instagram: <a href="https://www.instagram.com/elebele_124/">EleBele_124</a><br>
                     Youtube: <a href="https://www.youtube.com/@Dooklin">Dooklin</a><br>
+                    Github: <a href="https://github.com/Dooklin">Dooklin</a> <br>
                     <br>
                     FRIENDS:<br>
                     <a href="https://www.youtube.com/@_honeyfox">Honeyfox</a> 🦊 <br>
@@ -49,6 +50,12 @@ session_start();
                     }
                     ?>
                     current mood
+
+                    TODO<br>
+                    ADD PICS (EVA)
+                    ADMIN DOWNLAODS FOR LEBENSLAUF / PROJECTS?
+                    GUEST DOWNLOADS FOR GAMES AND OR PROJECTS
+                    IMRESSUM DATAENSCHUTZZ
 
     
                 </div>
