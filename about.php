@@ -38,7 +38,17 @@ session_start();
                     <a href="https://www.youtube.com/@masnlp">MasnLP</a> 🦡 <br>
                     <a href="https://www.youtube.com/@greenysoka">Greeny</a> 🐈 <br>
                     <br>
-                    test
+                    DOWNLOADS: <br>
+                    Games <br>
+                    None yet... Soon to come!<br>
+                    <br>
+                    Personal Stuff <br>
+                    <?php
+                    if(isset($_SESSION['name'])) {
+                        echo "current state <br>";
+                    }
+                    ?>
+                    current mood
 
     
                 </div>
