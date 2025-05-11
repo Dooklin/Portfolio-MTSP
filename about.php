@@ -25,33 +25,45 @@ session_start();
                 <hr>
                 <h2 class="blog-heading">HELLO!</h2>
                 <div class="blog-content">
-                    My Names Elias and i am scared of minorities and women
+                    
                     <br>
                     (That one album cover grade pic that i sent eva)
                     <br>
-                    LINKS: <br>
+                </div>
+                <h3 class="blog-heading">LINKS</h3>
+                <div class="blog-content">
                     Instagram: <a href="https://www.instagram.com/elebele_124/">EleBele_124</a><br>
                     Youtube: <a href="https://www.youtube.com/@Dooklin">Dooklin</a><br>
                     Github: <a href="https://github.com/Dooklin">Dooklin</a> <br>
                     <br>
-                    FRIENDS:<br>
+                </div>
+                <h3 class="blog-heading">FRIENDS:</h3>
+                <div class="blog-content">
                     <a href="https://www.youtube.com/@_honeyfox">Honeyfox</a> 🦊 <br>
                     <a href="https://www.youtube.com/@masnlp">MasnLP</a> 🦡 <br>
                     <a href="https://www.youtube.com/@greenysoka">Greeny</a> 🐈 <br>
                     <br>
-                    DOWNLOADS: <br>
-                    Games <br>
-                    None yet... Soon to come!<br>
+                </div>
+                <h3 class="blog-heading">DOWNLOADS:</h3>
+                <div class="blog-content">
+                    Games: <br>
+                    Prototype 2D Platformer: <a href="downloads/2DPlatformer.zip">Download</a><br>
+                    Space to Jump, L to Climb, J to Dash rest you can figure out on your own <br>
                     <br>
-                    Personal Stuff <br>
+                    <br>
                     <?php
                     if(isset($_SESSION['name'])) {
-                        echo "current state <br>";
+                        echo "Personal Downloads: <br>";
+                        echo "Dokumentation Projektarbeit: <a href='downloads/doku.zip'>Download</a><br>";
                     }
                     ?>
-                    current mood
-
-                    TODO<br>
+                    <br>
+                    <br>
+                    Other: <br>
+                    idk
+                </div>
+                <h3 class="blog-heading">TO DO:</h3>
+                <div class="blog-content">
                     ADD PICS (EVA)
                     ADMIN DOWNLAODS FOR LEBENSLAUF / PROJECTS?
                     GUEST DOWNLOADS FOR GAMES AND OR PROJECTS
