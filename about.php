@@ -47,14 +47,17 @@ session_start();
                 <h3 class="blog-heading">DOWNLOADS:</h3>
                 <div class="blog-content">
                     Games: <br>
-                    Prototype 2D Platformer: <a href="downloads/2DPlatformer.zip">Download</a><br>
+                    Prototype 2D Platformer: <a href="downloads/2DPlatformer.zip" download>Download</a><br>
                     Space to Jump, L to Climb, J to Dash rest you can figure out on your own <br>
+                    unzip, open Game.exe <br>
                     <br>
                     <br>
                     <?php
                     if(isset($_SESSION['name'])) {
                         echo "Personal Downloads: <br>";
-                        echo "Dokumentation Projektarbeit: <a href='downloads/doku.zip'>Download</a><br>";
+                        echo "Dokumentation Projektarbeit: <a href='downloads/doku.docx' download>Download</a><br>";
+                        echo "Corporate Design: <a href='downloads/corporatedesign.zip' download>Download</a><br>";
+                        
                     }
                     ?>
                     <br>
