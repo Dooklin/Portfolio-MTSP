@@ -37,6 +37,7 @@ session_start();
                     Github: <a href="https://github.com/Dooklin">Dooklin</a> <br>
                     <br>
                 </div>
+                <hr>
                 <h3 class="blog-heading">FRIENDS:</h3>
                 <div class="blog-content">
                     <a href="https://www.youtube.com/@_honeyfox">Honeyfox</a> 🦊 <br>
@@ -44,6 +45,7 @@ session_start();
                     <a href="https://www.youtube.com/@greenysoka">Greeny</a> 🐈 <br>
                     <br>
                 </div>
+                <hr>
                 <h3 class="blog-heading">DOWNLOADS:</h3>
                 <div class="blog-content">
                     Games: <br>
@@ -65,6 +67,7 @@ session_start();
                     Other: <br>
                     idk
                 </div>
+                <hr>
                 <h3 class="blog-heading">TO DO:</h3>
                 <div class="blog-content">
                     ADD PICS (EVA)
