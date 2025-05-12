@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+// if user isnt logged in as guest or admin / GET OUT
 if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
     header("Location: login.php");
 }
@@ -28,12 +29,14 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
         <div id="content-wrapper">
             <h1>BLOGS</h1>
             <?php
+            /* If an Admin is logged in, add an add Blog Link */
             if(isset($_SESSION['name'])) {
                 echo '<a href="addblog.php" class="add">ADD A BLOG</a>';
             }
             ?>
             
             <?php
+            /* Get 3 of the most recent Blogs from The Database */
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM blogs ORDER BY blogid DESC LIMIT 3;";
             $result = mysqli_query($db, $sql);
@@ -68,12 +71,14 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
         <div id="project-wrapper">
             <h1>PROJECTS</h1>
             <?php
+            /* If an Admin is logged in, add an add Project Link */
             if(isset($_SESSION['name'])) {
                 echo '<a href="addproject.php" class="add">ADD A PROJECT</a>';
             }
             ?>
 
             <?php
+            /* Get 3 Of the most recent Projects from The Database */
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM projects ORDER BY projectid DESC LIMIT 3;";
             $result = mysqli_query($db, $sql);

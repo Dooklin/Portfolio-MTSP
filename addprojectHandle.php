@@ -5,6 +5,7 @@ if(!isset($_SESSION['name'])) {
     header("Location: login.php");
 }
 
+/* If everythings there, insert the new Blog  */
 if(isset($_POST['submit-edit-blog'], $_POST['title'], $_POST['content'], $_POST['imagepath'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];

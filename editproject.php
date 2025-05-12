@@ -5,6 +5,7 @@ if(!isset($_SESSION['name'])) {
     header("Location: login.php");
 }
 
+/* Daten holen für die voreingefüllten Values */
 $projectid = $_GET['projectid'];
 
 $db = mysqli_connect("localhost", "root", "", "portfolio");

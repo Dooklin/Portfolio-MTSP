@@ -22,12 +22,14 @@ session_start();
     <div id="blog-container">
         <div id="blog-wrapper">
             <?php
+            /* If an Admin is logged in, add an add Blog Link */
             if(isset($_SESSION['name'])) {
                 echo '<a href="addblog.php" class="add">ADD A BLOG</a>';
             }
             ?>
             
             <?php
+            /* Get all of the Blogs from The Database, sorted by most recently added */
             $db = mysqli_connect("localhost", "root", "", "portfolio");
             $sql = "SELECT * FROM blogs ORDER BY blogid DESC;";
             $result = mysqli_query($db, $sql);

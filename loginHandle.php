@@ -1,4 +1,5 @@
 <?php
+/* Check if User with that Name and Password exists, login as that User (Create Session)*/
 if(isset($_POST['submit'], $_POST['submit'], $_POST['submit'])) {
     $name = $_POST['name'];
     $passwordEnc = hash("sha256", $_POST['password']);

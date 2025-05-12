@@ -55,6 +55,7 @@ session_start();
                     <br>
                     <br>
                     <?php
+                    /* As Adminuser you can see Personal Downloads */
                     if(isset($_SESSION['name'])) {
                         echo "Personal Downloads: <br>";
                         echo "Dokumentation Projektarbeit: <a href='downloads/doku.docx' download>Download</a><br>";
@@ -71,7 +72,7 @@ session_start();
                 <h3 class="blog-heading">TO DO:</h3>
                 <div class="blog-content">
                     ADD PICS (EVA)
-
+                    index.php add section abt me :)
     
                 </div>
                 <hr>
