@@ -23,9 +23,11 @@ session_start();
         <div id="blog-wrapper">
             <div class="blog-container">
                 <hr>
-                <h2 class="blog-heading">HELLO!</h2>
+                <h2 class="blog-heading">Data About Me!</h2>
                 <div class="blog-content">
-                    Test COntent
+                    Name: Elias Schinkinger <br>
+                    Location: 48°18'22.9"N 14°17'14.0"E (Live Updates)<br>
+                    Favorite Thing: Mexican Food <br>
                 </div>
             </div>
         </div>

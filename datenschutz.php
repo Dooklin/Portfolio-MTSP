@@ -23,9 +23,22 @@ session_start();
         <div id="blog-wrapper">
             <div class="blog-container">
                 <hr>
-                <h2 class="blog-heading">HELLO!</h2>
+                <h2 class="blog-heading">How do we deal with your data?</h2>
                 <div class="blog-content">
-                    Test COntent
+                    You can't upload anything, no data gets harvested<br>
+                    <br>
+                    When you login as Guest a session gets saved, <br>
+                    other things you did (and can't) such as uploading files, creating projects and publishing blogs are not saved <br>
+                    <br>
+                    Being logged in as an Admin, an admin session gets created <br>
+                    saved data includes <br>
+                    - username <br>
+                    - encrypted password <br>
+                    - session id (wow) <br>
+                    <br>
+                    All things you can do as an Admin is being saved, this should not matter to you though, because you are not an admin... <br>
+                    <br>
+                    <hr>
                 </div>
             </div>
         </div>

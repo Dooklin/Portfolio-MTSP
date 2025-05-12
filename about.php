@@ -71,9 +71,6 @@ session_start();
                 <h3 class="blog-heading">TO DO:</h3>
                 <div class="blog-content">
                     ADD PICS (EVA)
-                    ADMIN DOWNLAODS FOR LEBENSLAUF / PROJECTS?
-                    GUEST DOWNLOADS FOR GAMES AND OR PROJECTS
-                    IMRESSUM DATAENSCHUTZZ
 
     
                 </div>
