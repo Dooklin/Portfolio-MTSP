@@ -60,6 +60,32 @@ header {
     text-decoration: underline;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#floating-island-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vw;
+    height: 7.5vh;
+
+    border: 2px dashed white; /* maybe dotted or striped? */
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
 #logo {
     width: 50px;
     height: 50px;
