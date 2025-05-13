@@ -24,6 +24,41 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
             <h1 id="intro-heading">Welcome to my very own Portfolio site!</h1>
         </div>
     </div>
+    <!-- About Me -->
+     <div id="blog-container">
+        <div id="blog-wrapper">
+            <div class="blog-container">
+                <hr>
+                <h2 class="blog-heading">HELLO!</h2>
+                <div class="blog-content">
+                    My Name is Elias and welcome to my Blog!<br>
+                    <br>
+                    Heres ME <br>
+                    
+                    (That one album cover grade pic that i sent eva)
+                    <br>
+                </div>
+                <hr>
+                <h3 class="blog-heading">Find out more about me:</h3>
+                <div class="blog-content">
+                    <a href="about.php">Right here</a>
+                    <br>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div id="arrow-cont">
+        <div id="arrow-wrap">
+            <div id="downward-arrow"></div>
+            <div id="left"></div>
+            <div id="right"></div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
     <!-- BLOGS -->
     <div id="content-container">
         <div id="content-wrapper">
