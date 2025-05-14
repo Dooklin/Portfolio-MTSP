@@ -102,15 +102,16 @@ session_start();
                     $content = $row['content'];
                     $date = $row['date'];
                     
-                    echo "<h3 class='blog-heading'>Poster: $poster - Posted at: $date</h3>";
-                    echo "<h3 class='blog-heading'>$title</h3>";
+                    echo "<h2 class='blog-heading'>$title</h2>";
+                    echo "<h1 class='blog-content'>Poster: $poster - Posted at: $date</h1>";
                     echo '<div class="blog-content">';
                     echo $content;
                     echo '</div>';
 
                     if(isset($_SESSION['name'])) {
-                        echo "-> <a href='deletePrivateMessage.php' style='all: unset; cursor: pointer;'>🗑️</a>";
+                        echo "-> <a href='deletePrivateMessage.php?messageid=$messageid' style='all: unset; cursor: pointer;'>🗑️</a>";
                     }
+                    echo "<hr>";
                 }
                 mysqli_close($db);
                     
