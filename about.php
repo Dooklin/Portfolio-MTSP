@@ -29,7 +29,7 @@ session_start();
                     <br>
                     Heres ME 
                     <br>
-                    (That one album cover grade pic that i sent eva)
+                    <img src="pics/me.png" alt="Picture of Me">
                     <br>
                     Pretty cool Right?<br>
                     <br>
@@ -77,7 +77,7 @@ session_start();
                         <input type="text" onchange="checkPoster();" name="poster" id="edit-title" placeholder="Your Name here">
                         <input type="text" onchange="checkTitle();" name="title" id="edit-title" placeholder="Title goes here :P">
                         <div class="start-blog-content">
-                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :], Banned Words include: 'Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer'"></textarea>
+                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :], Banned Words include: 'Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer' If you violate these, if the publish button test is gray, you wont be able to send it"></textarea>
                         </div>
 
                         <input type="submit" value="SEND" name="submit-message-private" id="submit-edit-blog">

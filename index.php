@@ -35,7 +35,7 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
                     <br>
                     Heres ME <br>
                     
-                    (That one album cover grade pic that i sent eva)
+                    <img src="pics/me.png" alt="Picture of Me">
                     <br>
                 </div>
                 <hr>

@@ -452,10 +452,17 @@ footer {
     transition: all ease 0.2s;
 }
 
-#submit-edit-blog:hover {
+#submit-edit-blog:not(:disabled):hover {
     background-color: rgb(55, 147, 49);
-    
 }
+
+
+#submit-edit-blog:disabled {
+    background-color: #1e7e34;
+    cursor: not-allowed;
+    color: red;
+}
+
 
 /* PROJECTS */
 #main-project-container {
