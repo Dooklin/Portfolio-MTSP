@@ -45,7 +45,9 @@ session_start();
                 echo         $content;
                 echo     "</div>";
                 if (isset($_SESSION['name'])) {
-                    echo "<a href='editblog.php?blogid=$blogid&title=$title&content=$content&date=$date' class='blog-edit'>Edit</a>";
+                    echo "<a href='editblog.php?blogid=$blogid&title=$title&content=$content&date=$date' class='blog-edit'>Edit </a>";
+                    echo " Delete? -> <a href='deleteblog.php?blogid=$blogid' style='all: unset; cursor: pointer;'>🗑️</a>";
+
                 }
                 echo     "<p>Created On: $date</p>";
                 echo     "<hr>";
