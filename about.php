@@ -64,16 +64,11 @@ session_start();
                     }
                     ?>
                     <br>
-                    <br>
-                    Other: <br>
-                    idk
                 </div>
                 <hr>
                 <h3 class="blog-heading">TO DO:</h3>
                 <div class="blog-content">
-                    ADD PICS (EVA)
-                    index.php add section abt me :)
-    
+                    More Content here comin soon!
                 </div>
                 <hr>
             </div>
