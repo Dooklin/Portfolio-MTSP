@@ -25,10 +25,15 @@ session_start();
                 <hr>
                 <h2 class="blog-heading">HELLO!</h2>
                 <div class="blog-content">
-                    
+                    My Name is Elias and welcome to my Blog!<br>
+                    <br>
+                    Heres ME 
                     <br>
                     (That one album cover grade pic that i sent eva)
                     <br>
+                    Pretty cool Right?<br>
+                    <br>
+                    Go <a href="index.php#content-container">here</a> to see my most recent blogs
                 </div>
                 <h3 class="blog-heading">LINKS</h3>
                 <div class="blog-content">
