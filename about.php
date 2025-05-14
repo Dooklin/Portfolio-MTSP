@@ -87,31 +87,31 @@ session_start();
                 <hr>
                 <?php
                 if(isset($_SESSION['name'])) {
-                echo '<h3 class="blog-heading">MESSAGES:</h3>';
-                /* Get all of the Blogs from The Database, sorted by most recently added */
-                $db = mysqli_connect("localhost", "root", "", "portfolio");
-                $sql = "SELECT * FROM messages ORDER BY messageid DESC;";
-                $result = mysqli_query($db, $sql);
-                while($row = mysqli_fetch_array($result)) {
-                    $messageid = $row['messageid'];
-                    $poster = $row['poster'];
-                    $title = $row['title'];
-                    $content = $row['content'];
-                    $date = $row['date'];
+                    echo '<h3 class="blog-heading">MESSAGES:</h3>';
+                    /* Get all of the Messages from The Database, sorted by most recently added */
+                    $db = mysqli_connect("localhost", "root", "", "portfolio");
+                    $sql = "SELECT * FROM messages ORDER BY messageid DESC;";
+                    $result = mysqli_query($db, $sql);
+                    while($row = mysqli_fetch_array($result)) {
+                        $messageid = $row['messageid'];
+                        $poster = $row['poster'];
+                        $title = $row['title'];
+                        $content = $row['content'];
+                        $date = $row['date'];
+                        
+                        echo "<h2 class='blog-heading'>$title</h2>";
+                        echo "<h1 class='blog-content'>Poster: $poster - Posted at: $date</h1>";
+                        echo '<div class="blog-content">';
+                        echo $content;
+                        echo '</div>';
                     
-                    echo "<h2 class='blog-heading'>$title</h2>";
-                    echo "<h1 class='blog-content'>Poster: $poster - Posted at: $date</h1>";
-                    echo '<div class="blog-content">';
-                    echo $content;
-                    echo '</div>';
-
-                    if(isset($_SESSION['name'])) {
-                        echo "-> <a href='deletePrivateMessage.php?messageid=$messageid' style='all: unset; cursor: pointer;'>🗑️</a>";
+                        if(isset($_SESSION['name'])) {
+                            echo "-> <a href='deletePrivateMessage.php?messageid=$messageid' style='all: unset; cursor: pointer;'>🗑️</a>";
+                        }
+                        echo "<hr>";
                     }
-                    echo "<hr>";
-                }
-                mysqli_close($db);
-                    
+                    mysqli_close($db);
+                        
                 }
                 
                 ?>
