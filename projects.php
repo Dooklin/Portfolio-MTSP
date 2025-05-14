@@ -47,6 +47,8 @@ session_start();
                 echo     "</div>";
                 if (isset($_SESSION['name'])) {
                     echo "<a href='editproject.php?projectid=$projectid&title=$title&content=$content&imagepath=$imagepath' class='blog-edit'>Edit</a>";
+                    echo " Delete? -> <a href='deleteproject.php?projectid=$projectid' style='all: unset; cursor: pointer;'>🗑️</a>";
+
                 }
                 echo     "<hr>";
                 echo "</div>";

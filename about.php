@@ -65,22 +65,14 @@ session_start();
                     ?>
                     <br>
                 </div>
-                So, überprüfen with js, 
-                send it to db, 
-                other site with messages (with link in about),
-                list em all unzip
-
-                From:
-                Title
-                Content
                 <hr>
                 <h3 class="blog-heading">CONTACT ME HERE! </div>
                 <div class="start-blog-container">
                     <form action="messageHandle.php" method="post">
-                        <input type="text" name="poster" id="edit-title" placeholder="Your Name here">
-                        <input type="text" name="title" id="edit-title" placeholder="Title goes here :P">
+                        <input type="text" onchange="checkPoster();" name="poster" id="edit-title" placeholder="Your Name here">
+                        <input type="text" onchange="checkTitle();" name="title" id="edit-title" placeholder="Title goes here :P">
                         <div class="start-blog-content">
-                            <textarea name="content" id="edit-content" placeholder="Write your heart out :]"></textarea>
+                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :]"></textarea>
                         </div>
 
                         <input type="submit" value="SEND" name="submit-message-private" id="submit-edit-blog">
@@ -119,8 +111,6 @@ session_start();
                 
                 ?>
 
-
-                
             </div>
         </div>
     </div>
@@ -130,5 +120,22 @@ session_start();
     <svg id="triangle-bg" style="position: fixed; z-index: -1; width: 100%; height: 100%; top: 0; left: 0;"></svg>
 
     <script src="spawnTriangles.js"></script>
+
+    <script>
+        function checkPoster() {
+            let text = document.getElementByName('poster').value;
+
+            /* get the poster and check if its more than 1 character */
+        }
+
+        function checkTitle() {
+
+            /* get the title and check if its more than 1 character and a max of 50 characters and no common swear words are in it */
+        }
+
+        function checkContent() {
+            /* get the poster and check if its more than 1 character and no common swear words are in it */
+        }
+    </script>
 </body>
 </html>
