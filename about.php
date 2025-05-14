@@ -77,7 +77,7 @@ session_start();
                         <input type="text" onchange="checkPoster();" name="poster" id="edit-title" placeholder="Your Name here">
                         <input type="text" onchange="checkTitle();" name="title" id="edit-title" placeholder="Title goes here :P">
                         <div class="start-blog-content">
-                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :]"></textarea>
+                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :], Banned Words include: 'Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer'"></textarea>
                         </div>
 
                         <input type="submit" value="SEND" name="submit-message-private" id="submit-edit-blog">
@@ -127,20 +127,55 @@ session_start();
     <script src="spawnTriangles.js"></script>
 
     <script>
-        function checkPoster() {
-            let text = document.getElementByName('poster').value;
+    const swearWords = ['Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer'];
 
-            /* get the poster and check if its more than 1 character */
-        }
+    const posterInput = document.getElementById('edit-title');
+    const titleInput = document.querySelector('input[name="title"]');
+    const contentInput = document.getElementById('edit-content');
+    const submitButton = document.getElementById('submit-edit-blog');
 
-        function checkTitle() {
+    let posterValid = false;
+    let titleValid = false;
+    let contentValid = false;
 
-            /* get the title and check if its more than 1 character and a max of 50 characters and no common swear words are in it */
-        }
+    function normalize(text) {
+    return text.toLowerCase().replace(/[^a-z]/g, '')     // Anscheinend gehen so symbole und leerzeichen weg
+    }
 
-        function checkContent() {
-            /* get the poster and check if its more than 1 character and no common swear words are in it */
-        }
-    </script>
+    function containsSwearWords(text) {
+        const normalized = normalize(text);
+        return swearWords.some(word => normalized.includes(normalize(word)));
+    }
+
+
+    function checkPoster() {
+        const text = posterInput.value.trim();
+        posterValid = text.length > 1 && !containsSwearWords(text);
+        validateForm();
+    }
+
+    function checkTitle() {
+        const text = titleInput.value.trim();
+        titleValid = text.length > 1 && text.length <= 50 && !containsSwearWords(text);
+        validateForm();
+    }
+
+    function checkContent() {
+        const text = contentInput.value.trim();
+        contentValid = text.length > 1 && !containsSwearWords(text);
+        validateForm();
+    }
+
+    function validateForm() {
+        submitButton.disabled = !(posterValid && titleValid && contentValid);
+    }
+
+    validateForm();
+
+    posterInput.addEventListener('input', checkPoster);
+    titleInput.addEventListener('input', checkTitle);
+    contentInput.addEventListener('input', checkContent);
+</script>
+
 </body>
 </html>
