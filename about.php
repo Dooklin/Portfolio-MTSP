@@ -65,12 +65,61 @@ session_start();
                     ?>
                     <br>
                 </div>
+                So, überprüfen with js, 
+                send it to db, 
+                other site with messages (with link in about),
+                list em all unzip
+
+                From:
+                Title
+                Content
                 <hr>
-                <h3 class="blog-heading">TO DO:</h3>
-                <div class="blog-content">
-                    More Content here comin soon!
+                <h3 class="blog-heading">CONTACT ME HERE! </div>
+                <div class="start-blog-container">
+                    <form action="messageHandle.php" method="post">
+                        <input type="text" name="poster" id="edit-title" placeholder="Your Name here">
+                        <input type="text" name="title" id="edit-title" placeholder="Title goes here :P">
+                        <div class="start-blog-content">
+                            <textarea name="content" id="edit-content" placeholder="Write your heart out :]"></textarea>
+                        </div>
+
+                        <input type="submit" value="SEND" name="submit-message-private" id="submit-edit-blog">
+                    </form>
                 </div>
+
                 <hr>
+                <?php
+                if(isset($_SESSION['name'])) {
+                echo '<h3 class="blog-heading">MESSAGES:</h3>';
+                /* Get all of the Blogs from The Database, sorted by most recently added */
+                $db = mysqli_connect("localhost", "root", "", "portfolio");
+                $sql = "SELECT * FROM messages ORDER BY messageid DESC;";
+                $result = mysqli_query($db, $sql);
+                while($row = mysqli_fetch_array($result)) {
+                    $messageid = $row['messageid'];
+                    $poster = $row['poster'];
+                    $title = $row['title'];
+                    $content = $row['content'];
+                    $date = $row['date'];
+                    
+                    echo "<h3 class='blog-heading'>Poster: $poster - Posted at: $date</h3>";
+                    echo "<h3 class='blog-heading'>$title</h3>";
+                    echo '<div class="blog-content">';
+                    echo $content;
+                    echo '</div>';
+
+                    if(isset($_SESSION['name'])) {
+                        echo "-> <a href='deletePrivateMessage.php' style='all: unset; cursor: pointer;'>🗑️</a>";
+                    }
+                }
+                mysqli_close($db);
+                    
+                }
+                
+                ?>
+
+
+                
             </div>
         </div>
     </div>
