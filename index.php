@@ -48,15 +48,6 @@ if(!isset($_SESSION['name']) && !isset($_SESSION['guest'])) {
             </div>
         </div>
     </div>
-
-    <div id="arrow-cont">
-        <div id="arrow-wrap">
-            <div id="downward-arrow"></div>
-            <div id="left"></div>
-            <div id="right"></div>
-        </div>
-    </div>
-
     <div id="spacer"></div>
 
     <!-- BLOGS -->

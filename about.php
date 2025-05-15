@@ -10,7 +10,7 @@ session_start();
     <meta name="author" content="Elias Schinkinger">
     <link rel="stylesheet" href="https://use.typekit.net/dfj2dpe.css">
     <link rel="stylesheet" href="style.css">
-    <title>Blogs</title>
+    <title>About</title>
 </head>
 <body>
     <?php include "header.php" ?>
@@ -77,7 +77,7 @@ session_start();
                         <input type="text" onchange="checkPoster();" name="poster" id="edit-title" placeholder="Your Name here">
                         <input type="text" onchange="checkTitle();" name="title" id="edit-title" placeholder="Title goes here :P">
                         <div class="start-blog-content">
-                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :], Banned Words include: 'Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer' If you violate these, if the publish button test is gray, you wont be able to send it"></textarea>
+                            <textarea name="content" onchange="checkContent();" id="edit-content" placeholder="Write your heart out :], Banned Words include: 'Alexander Fuchs', 'job', 'employment', 'Drivers License', 'Führerschein', 'Ottakringer'"></textarea>
                         </div>
 
                         <input type="submit" value="SEND" name="submit-message-private" id="submit-edit-blog">

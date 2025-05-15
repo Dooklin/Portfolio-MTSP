@@ -10,7 +10,7 @@ session_start();
     <meta name="author" content="Elias Schinkinger">
     <link rel="stylesheet" href="https://use.typekit.net/dfj2dpe.css">
     <link rel="stylesheet" href="style.css">
-    <title>Blogs</title>
+    <title>Projects</title>
 </head>
 <body>
     <?php include "header.php" ?>

@@ -28,7 +28,7 @@ mysqli_close($db);
     <meta name="author" content="Elias Schinkinger">
     <link rel="stylesheet" href="https://use.typekit.net/dfj2dpe.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Edit Project</title>
 </head>
 <body>
     <?php include "header.php" ?>
