@@ -9,7 +9,7 @@ if(!isset($_SESSION['name'])) {
 $blogid = $_GET['blogid'];
 
 $db = mysqli_connect("localhost", "root", "", "portfolio");
-$sql = "DELETE FROM messages WHERE blogid = '$blogid'";
+$sql = "DELETE FROM blogs WHERE blogid = '$blogid'";
 mysqli_query($db, $sql);
 
 header("Location: blogs.php");

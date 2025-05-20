@@ -9,7 +9,7 @@ if(!isset($_SESSION['name'])) {
 $projectid = $_GET['projectid'];
 
 $db = mysqli_connect("localhost", "root", "", "portfolio");
-$sql = "DELETE FROM messages WHERE projectid = '$projectid'";
+$sql = "DELETE FROM project WHERE projectid = '$projectid'";
 mysqli_query($db, $sql);
 
 header("Location: projects.php");
