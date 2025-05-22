@@ -63,7 +63,7 @@ session_start();
                     /* As Adminuser you can see Personal Downloads */
                     if(isset($_SESSION['name'])) {
                         echo "Personal Downloads: <br>";
-                        echo "Dokumentation Projektarbeit: <a href='downloads/doku.docx' download>Download</a><br>";
+                        echo "Dokumentation Projektarbeit: <a href='#' download>Download not yet here (never will be)</a><br>";
                         echo "Corporate Design: <a href='downloads/corporatedesign.zip' download>Download</a><br>";
                         
                     }
